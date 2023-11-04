@@ -1,0 +1,88 @@
+## Practice Questions
+1. How do you assess the statistical significance of an insight?
+Hypothesis Formation: Define a null hypothesis (H0) that there is no effect or no difference, and an alternative hypothesis (H1) that there is an effect or a difference.
+
+Data Collection: Gather the data that will be used to test the hypotheses.
+
+Choose a Significance Level (α): Decide on a significance level, often 0.05, which is the probability of rejecting the null hypothesis when it is actually true (Type I error).
+
+Statistical Test Selection: Choose an appropriate statistical test based on the data and the hypothesis. For example, use a t-test for comparing two means, ANOVA for more than two groups, or a chi-square test for categorical data.
+
+Calculate Test Statistic: Perform the statistical test which will result in a test statistic (like t-value, F-value, chi-square statistic, etc.).
+
+P-Value Calculation: Determine the p-value, which tells you the probability of obtaining a result at least as extreme as the one observed, assuming the null hypothesis is true.
+
+Compare P-Value to Significance Level (α): If the p-value is less than or equal to the significance level, you reject the null hypothesis, suggesting that the insight is statistically significant.
+
+Effect Size: Consider the effect size, which indicates the practical significance of the insight. Even if the result is statistically significant, it may not be practically important.
+
+Confidence Intervals: Calculate confidence intervals to provide a range of values that are likely to contain the population parameter of interest.
+
+Review Assumptions: Check if the assumptions of the statistical test are met. For example, the assumption of normality for a t-test.
+
+Multiple Comparisons: If you’re conducting multiple tests, adjust the significance level to account for the increased chance of Type I errors, possibly using a Bonferroni correction or other methods.
+
+Conclusions: Draw conclusions about the statistical significance of your insight based on the above steps.
+2. What is the Central Limit Theorem? Explain it. Why is it important?
+Explanation of the Central Limit Theorem:
+
+The CLT states that if you take a large number of random samples from a population, the distribution of the sample means will be approximately normally distributed, regardless of the shape of the population distribution.
+This approximation to a normal distribution becomes better as the sample size increases.
+The mean of the sample means will be equal to the mean of the population.
+The variance of the sample means will be equal to the population variance divided by the sample size (n).
+Why the Central Limit Theorem is Important:
+
+Prediction: It allows us to make predictions about sample means from any population, even when the population is not normally distributed.
+
+Inference: The CLT is the foundation for many statistical procedures, including hypothesis testing and the creation of confidence intervals. It justifies using the normal distribution to approximate the sampling distribution of the mean.
+
+Simplification: It simplifies the complexity of dealing with the distribution of sample means because it means we can use the normal distribution as a good approximation in many cases, instead of trying to calculate the true sampling distribution each time.
+
+Decision Making: In practice, the CLT makes it possible to make decisions with some level of certainty without having to sample the entire population, which is often impractical or impossible.
+
+Quality Control: In fields like manufacturing, the CLT is used to understand the distribution of a product’s characteristics and to maintain quality control.
+
+Error Estimation: It allows researchers to estimate the margin of error when reporting estimates from sample data, which is crucial for understanding the limits of survey results, polls, and experiments.
+3. What is the statistical power?
+False Negatives (Type II Errors): Statistical power is concerned with avoiding Type II errors, where a test fails to reject the null hypothesis even though it is false. In other words, it's about not missing a real effect or difference.
+
+Probability: Power is expressed as a probability, ranging from 0 to 1. A higher power means a higher probability of detecting an effect when it exists. A common benchmark for adequate power is 0.8 or 80%, meaning there's an 80% chance of detecting an effect if there is one.
+
+Factors Influencing Power:
+
+Effect Size: Larger effects are easier to detect than smaller ones, thus larger effect sizes increase the power of a test.
+Sample Size: Larger sample sizes offer more information about the population and increase the test's power.
+Significance Level (α): Setting a higher α (like 0.1 instead of 0.05) increases power by making it easier to reject the null hypothesis, but it also increases the risk of a Type I error (false positive).
+Variability in the Data: Less variability (noise) in the data increases power because the signal (effect) stands out more clearly.
+Designing Studies: When designing a study, researchers aim to choose a sample size and significance level that provide sufficient power to detect the effect they're investigating.
+
+Importance: Without enough power, studies may yield inconclusive or misleading results. Low power increases the chance that a statistically significant finding is actually a Type I error, and it reduces the likelihood of detecting a real effect, potentially wasting resources and time.
+
+Calculating Power: Before a study is conducted, power analysis can be conducted to determine the required sample size to achieve a desired level of power. After a study, power can be calculated to assess the strength of the findings.
+
+Statistical power is crucial for designing reliable experiments and studies because it directly affects the likelihood of drawing valid conclusions about the underlying population based on the sample data.
+4. How do you control for biases?
+Randomization: Use random assignment in experiments to evenly distribute biases across all groups.
+
+Blinding: Implement single-blind or double-blind protocols to prevent participants or researchers from being influenced by expectations.
+
+Control Groups: Use control groups to compare against the experimental groups and isolate the effect of the variable being tested.
+
+Standardization: Standardize procedures for data collection and analysis to minimize variability that's not related to the study.
+
+Large Samples: Increase sample size to reduce the impact of outliers and anomalies.
+
+Replication: Replicate studies to ensure that results are consistent across different samples and conditions.
+
+Peer Review: Subject research to peer review to catch potential biases from the design to the interpretation stages.
+
+Statistical Adjustment: Use statistical methods, such as regression or matching techniques, to adjust for known biases.
+5. What are confounding variables?
+
+Confounding variables are factors other than the independent variable that might cause or influence the outcome of a study. These variables are problematic because they can lead to incorrect conclusions about the relationship between the variables of interest. 
+6. What is A/B testing?
+
+A/B testing, also known as split testing, is a method used to compare two versions of a single variable to determine which one performs better. It's commonly used in web design, marketing, product development, and other areas where user experience is important. 
+7. What are confidence intervals?
+
+Confidence intervals are a range of values, derived from sample statistics, that are believed to contain the true value of an unknown population parameter (like the mean or proportion) with a certain level of confidence. 
